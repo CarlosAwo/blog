@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* You can add custom styles here */
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+    <!-- Navigation -->
+    <nav class="bg-white p-6 shadow">
+        <div class="container mx-auto md:flex md:justify-between md:items-center">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a href="#" class="text-xl font-semibold text-gray-800">Minimal Blog</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-500 focus:outline-none">
+                        <svg viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 110-2h12a1 1 0 110 2H4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="hidden md:flex md:items-center md:w-auto" id="menu">
+                <nav>
+                    <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                        <li><a href="#" class="block md:inline-block mt-4 md:mt-0 mr-6 hover:text-gray-500">Home</a></li>
+                        <li><a href="#" class="block md:inline-block mt-4 md:mt-0 mr-6 hover:text-gray-500">About</a></li>
+                        <li><a href="#" class="block md:inline-block mt-4 md:mt-0 hover:text-gray-500">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mx-auto py-10">
+        <h1 class="text-3xl font-semibold text-gray-900 mb-5">Welcome to Minimal Blog</h1>
+        <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend nisi in lectus fermentum, in vehicula lacus rutrum. Vivamus malesuada, lectus vitae efficitur ultrices, nunc ex fringilla justo, nec aliquam felis nulla non velit.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Minimal Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile navigation menu
+        document.getElementById('menu-toggle').addEventListener('click', function () {
+            document.getElementById('menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
